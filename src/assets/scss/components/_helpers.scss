@@ -1,0 +1,15 @@
+/*common */
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  margin-top: 20px;
+  @extend %resetLi;
+}

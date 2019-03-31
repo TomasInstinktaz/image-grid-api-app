@@ -1,0 +1,79 @@
+@import '../../assets/scss/site-styles.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $custom-light-grey;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: $basic-white;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* searchForm  */
+.searchForm {
+  background: $custom-light-grey;   // variable idet
+  &__searchInput {
+    width: 100%;
+    outline: none;
+    background: $custom-grey;
+    @extend %form_field;
+    @extend %margin_top_bot;
+    @include placeholder {
+      color: $basic-black;
+      font-weight:400;
+    }
+  }
+  &__searchBtn,
+  &__saveBtn {
+    background: $custom-grey;
+    width: 48%;
+    @extend %form_field;
+    @extend %form_btn;
+    @extend %margin_top_bot;
+  }
+  &__searchBtn {
+    float: left;
+  }
+  &__saveBtn {
+    float: right;
+  }
+  &__imageGrid {
+    background: $custom-darkner-grey;
+    min-height: 300px;
+    @extend %form_field;
+    p {
+      @extend %absoluteVHCenter;
+    }
+  }
+  &__savedQueries {
+    background: $custom-darkner-grey;
+    min-height: 300px;
+    @extend %form_field;
+  }
+}
