@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/image-grid-api-app/precache-manifest.b0f604e9eefdf1b33c311f36781965b4.js"
+  "/image-grid-api-app/precache-manifest.fd5109f083ea1b1d150b909109c10c58.js"
 );
 
 workbox.clientsClaim();
